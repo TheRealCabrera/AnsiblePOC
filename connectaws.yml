@@ -19,7 +19,8 @@
       type: "{{ ec2_instance_type }}"
       image: "{{ ec2_image }}"
       region: "{{ ec2_region }}"
-      instance_tags: "EC2_ansible_poc"
+      instance_tags:
+        Name: EC2_ansible_poc
       count: "{{ ec2_instance_count }}"
       wait: true
     register: ec2
