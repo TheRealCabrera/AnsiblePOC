@@ -9,8 +9,9 @@
   vars:
   - vars/all
   
+  #runs ecs task with the image connected
   tasks:
-  - name: Run task
+  - name: Run ecs task
     ecs_task:
       operation: run
       cluster: default
