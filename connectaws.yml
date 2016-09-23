@@ -6,8 +6,6 @@
   gather_facts: False
   
   # load variables from vars file
-  vars:
-  - vars/all
   
   #runs ecs task with the image connected
   tasks:
